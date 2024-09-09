@@ -12,22 +12,6 @@ body{
     flex-direction: column;
 }
 
-.topnav{
-    background-color: black;
-    overflow: hidden;
-    align-items: center;
-    text-align: center;
-}
-
-.topnav a{
-    color: white;
-    align-items: center;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 15px;
-}
-
 main{
     flex: 1;
 }
