@@ -16,6 +16,28 @@ main{
     flex: 1;
 }
 
+.topnav{
+    background-color: black;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+}
+
+.topnav button{
+    color: purple; 
+    border: black;
+    padding: 5px 20px;
+    text-align: left;
+    text-decoration: none;
+    margin: 5px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.topnav button:hover{
+    color: red;
+}
+
 .header-box{
     display: flex;
     flex-direction: column;
@@ -39,4 +61,16 @@ main{
     padding: 10px;
     font-size: 10px;
 }
+
+#button #home_button{
+    color: purple; 
+    border: black;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 
