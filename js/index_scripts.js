@@ -6,3 +6,11 @@ function index_goToAboutMe(){
 function index_goToSOTC(){
     window.location.href = "html/SOTC.html";
 }
+
+function index_openSideNav() {
+  document.getElementById("mySideNav").style.width = "100%";
+}
+
+function index_closeSideNav() {
+  document.getElementById("mySideNav").style.width = "0%";
+}

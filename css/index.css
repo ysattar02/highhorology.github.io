@@ -12,6 +12,11 @@ body{
     flex-direction: column;
 }
 
+p{
+    font-style: italic;
+}
+
+/*
 .topnav{
     background-color: black;
     overflow: hidden;
@@ -33,9 +38,48 @@ body{
 .topnav button:hover{
     color: red;
 }
+*/
 
-main{
-    flex: 1;
+.sidenav{
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: .5s;
+    text-align: center;
+}
+.sidenav a{
+    color: purple; 
+    border: black;
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidenav a:hover{
+    color: red;
+}
+
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main-box{
+    transition: margin-left .5s;
+    padding: 20px;
+    flex:1
 }
 
 .header-box{
