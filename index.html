@@ -1,54 +1,48 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "css/index.css"> 
-    <link rel = "stylesheet" href = "css/animated_background_one.css">
-    <title> Main Page </title>
-</head>
-    
-<body>
-    <script src = "js/index_scripts.js"></script>
-<!--
-    <div class = "topnav">
-        <button id = "about_me" type = "button" onclick = index_goToAboutMe()> About Me </button>
-        
-        <button id = "SOTC" type = "button" onclick = index_goToSOTC()> SOTC </button>
-    </div>
--->
-    <header>
-        <div class = "header-box">
-            <p>Welcome To The High Horology Blog!</p>
-        </div>
-    </header>
-    
-    <span style = "font-size:30px;cursor:pointer" onclick = "index_openSideNav()"> &#9776; </span>
-    
-    <div class = "sidenav" id = mySideNav>
-        <a href = "javascript:void(0)" class = "closebtn" onclick = "index_closeSideNav()"> &times; </a>
-        <a href = "index_goToAboutMe"> About Me </a>
-        <a href = "#"> SOTC </a>
-        <a href = "#"> Contact </a>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "css/index.css"> 
+        <link rel = "stylesheet" href = "css/animated_background_one.css">
+        <title> Main Page </title>
+    </head>
 
-    <div id = "main-box">
-<!--
-        <main>
-            <section id = "home">
-                <h2> Home Section </h2>
-                <p> This is the home section of the page. </p>
-            </section>
-        </main>
--->
-    </div>
-    
-    <footer>
-        <div class = "footer-box">
-            <p> &copy; 2024 Yudalloo. All Rights Reserved. </p>
+    <body>
+        <script src = "js/index_scripts.js"></script>
+        
+        <header>
+            <div class = "header-box">
+                <p>Welcome To The High Horology Blog!</p>
+            </div>
+        </header>
+
+        <span style = "font-size:30px;cursor:pointer" onclick = "index_openSideNav()"> &#9776; </span>
+
+        <div class = "sidenav" id = mySideNav>
+            <a href = "javascript:void(0)" class = "closebtn" onclick = "index_closeSideNav()"> &times; </a>
+            <a onclick = "index_goToAboutMe()"> About Me </a>
+            <a onclick = "index_goToSOTC()"> SOTC </a>
+            <a onclick = "#"> Contact </a>
         </div>
-    </footer>
-    
-</body>
+
+        <div id = "main-box">
+    <!--
+            <main>
+                <section id = "home">
+                    <h2> Home Section </h2>
+                    <p> This is the home section of the page. </p>
+                </section>
+            </main>
+    -->
+        </div>
+
+        <footer>
+            <div class = "footer-box">
+                <p> &copy; 2024 Yudalloo. All Rights Reserved. </p>
+            </div>
+        </footer>
+
+    </body>
 </html>
