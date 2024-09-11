@@ -10,17 +10,15 @@
     </head>
 
     <body>
-        <script src = "js/index_scripts.js"></script>
-        
         <header>
             <div class = "header-box">
-                <p>Welcome To The High Horology Blog!</p>
+                <p> Welcome To The High Horology Blog! </p>
             </div>
         </header>
 
         <span style = "font-size:30px;cursor:pointer" onclick = "index_openSideNav()"> &#9776; </span>
 
-        <div class = "sidenav" id = mySideNav>
+        <div class = "sidenav" id = "mySideNav">
             <a href = "javascript:void(0)" class = "closebtn" onclick = "index_closeSideNav()"> &times; </a>
             <a onclick = "index_goToAboutMe()"> About Me </a>
             <a onclick = "index_goToSOTC()"> SOTC </a>
@@ -28,14 +26,38 @@
         </div>
 
         <div id = "main-box">
-    <!--
-            <main>
-                <section id = "home">
-                    <h2> Home Section </h2>
-                    <p> This is the home section of the page. </p>
-                </section>
-            </main>
-    -->
+            <div class = "date-window">
+<!--                come back to this-->
+            </div>
+            
+            <div class = "controls">
+                <select id = "tick-type">
+                    <option value = "10"> Spring Drive </option>
+                    <option value = "100"> Automatic </option>
+                    <option value = "1000" selected> Quartz </option>
+                </select>
+            </div>
+            
+            <div class = "clock">
+                <div class = "clock-face">
+                    <div class = "number number1" id = "hour1"> 1 </div>
+                    <div class = "number number2" id = "hour2"> 2 </div>
+                    <div class = "number number3" id = "hour3"> 3 </div>
+                    <div class = "number number4" id = "hour4"> 4 </div>
+                    <div class = "number number5" id = "hour5"> 5 </div>
+                    <div class = "number number6" id = "hour6"> 6 </div>
+                    <div class = "number number7" id = "hour7"> 7 </div>
+                    <div class = "number number8" id = "hour8"> 8 </div>
+                    <div class = "number number9" id = "hour9"> 9 </div>
+                    <div class = "number number10" id = "hour10"> 10 </div>
+                    <div class = "number number11" id = "hour11"> 11 </div>
+                    <div class = "number number12" id = "hour12"> 12 </div>
+                    <div class = "hand hour-hand"></div>
+                    <div class = "hand minute-hand"></div>
+                    <div class = "hand second-hand"></div>
+                </div>   
+            </div>
+            
         </div>
 
         <footer>
@@ -43,6 +65,6 @@
                 <p> &copy; 2024 Yudalloo. All Rights Reserved. </p>
             </div>
         </footer>
-
+        <script src = "js/index_scripts.js"></script>
     </body>
 </html>
