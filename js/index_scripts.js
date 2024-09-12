@@ -26,6 +26,7 @@ function setDate(){
     const seconds = now.getSeconds() + now.getMilliseconds() / 1000;
     const minutes = now.getMinutes();
     const hours = now.getHours();
+    console.log(hours);
     
     const secondsDegrees = ((seconds / 60) * 360) + 90;
     const minutesDegrees = ((minutes / 60) * 360) + ((seconds / 60) * 6) + 90;

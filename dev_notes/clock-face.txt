@@ -1,0 +1,46 @@
+<div class = "clock-face">
+                    <div class = "number number1" id = "hour1"> 1 </div>
+                    <div class = "number number2" id = "hour2"> 2 </div>
+                    <div class = "number number3" id = "hour3"> 3 </div>
+                    <div class = "number number4" id = "hour4"> 4 </div>
+                    <div class = "number number5" id = "hour5"> 5 </div>
+                    <div class = "number number6" id = "hour6"> 6 </div>
+                    <div class = "number number7" id = "hour7"> 7 </div>
+                    <div class = "number number8" id = "hour8"> 8 </div>
+                    <div class = "number number9" id = "hour9"> 9 </div>
+                    <div class = "number number10" id = "hour10"> 10 </div>
+                    <div class = "number number11" id = "hour11"> 11 </div>
+                    <div class = "number number12" id = "hour12"> 12 </div>
+                    <div class = "hand hour-hand"></div>
+                    <div class = "hand minute-hand"></div>
+                    <div class = "hand second-hand"></div>
+                </div>   
+
+uses top and left to scale numbers 
+intercepts on axis will be at 12, 3, 6, 9
+12 will be at 0 top, 50 right
+assuming origin is at 50%, 50%
+use the equations to solve for 
+top: location = 50cos(angle) + 50
+left: location = 50sin(angle) + 50
+
+eg: number 1 is at 30 degrees
+top = 50cos(30) + 50 = 93.30127019
+left = 50sin(30) + 50 = 75
+
+this means that percents will be 100 - 93.3 = 6.7% & 75%
+
+
+final percents
+.number1{top: 6.7%; left: 75%;}
+.number2{top: 25%; left: 93.7%;}
+.number3{top: 50%; left: 100%;}
+.number4{top: 75%; left: 93.3%;}
+.number5{top: 93.3%; left: 75%;}
+.number6{top: 100%; left: 50%;}
+.number7{top: 93.3%; left: 25%;}
+.number8{top: 75%; left: 6.7%;}
+.number9{top: 50%; left: 0%;}
+.number10{top: 25%; left: 6.7%;}
+.number11{top: 6.7%; left: 25%;}
+.number12{top: 0%; left: 50%;}
