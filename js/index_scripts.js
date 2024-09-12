@@ -23,18 +23,26 @@ let intervalId;
 
 function setDate(){
     const now = new Date();
-    const seconds = now.getSeconds() + now.getMilliseconds() / 1000;
+    const tickTypeValue = parseInt(tickType.value, 10);  
+    console.log(tickTypeValue);
+    
+    let seconds;
+    if (tickTypeValue === 1000){
+        seconds = now.getSeconds();
+    }
+    else{
+        seconds = now.getSeconds() + (now.getMilliseconds() / 1000);
+    }
     const minutes = now.getMinutes();
     const hours = now.getHours();
-    console.log(hours);
     
-    const secondsDegrees = ((seconds / 60) * 360) + 90;
+    const secondsDegrees = seconds * 6;
     const minutesDegrees = ((minutes / 60) * 360) + ((seconds / 60) * 6) + 90;
-//    const hoursDegrees = ((hours / 12) * 360) + ((minutes / 60) * 30) + 90;
+
+    console.log(secondsDegrees);
     
     secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
     minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
-//    hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
     
     //call to highlight current hour
     highlightCurrentHour(hours % 12);
