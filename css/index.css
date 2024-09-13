@@ -158,3 +158,34 @@ p{
 .number10{top: 25%; left: 6.7%;}
 .number11{top: 6.7%; left: 25%;}
 .number12{top: 0%; left: 50%;}
+
+@media (max-width: 480px) {
+    .header-box {
+        font-size: 1rem;
+    }
+
+    .footer-box {
+        font-size: 0.6rem;
+    }
+
+    .clock {
+        width: 200px;
+        height: 200px;
+    }
+
+    .number {
+        font-size: 1rem;
+    }
+
+    .sidenav a {
+        font-size: 1.2rem;
+    }
+
+    .controls select {
+        font-size: 1rem;
+    }
+    
+    .sidenav {
+        width: 100%;
+    }
+}
