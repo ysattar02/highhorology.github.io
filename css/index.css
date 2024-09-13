@@ -1,12 +1,10 @@
-html{
+html, body{
+    height: 100%;
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 
 body{
-    margin: 0;
-    padding: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -61,6 +59,11 @@ p{
     flex: 1;
 }
 
+/* add all elements in main box here below for stling */
+.date-window, .controls, .clock{
+    margin-bottom: 15px;
+}
+
 .header-box{
     display: flex;
     flex-direction: column;
@@ -69,7 +72,7 @@ p{
     background-color: azure;
     text-decoration: none;
     color: black;
-    padding: 0px;
+    padding: 10px;
     font-size: 30px;
 }
 
@@ -159,6 +162,18 @@ footer{
 .number10{top: 25%; left: 6.7%;}
 .number11{top: 6.7%; left: 25%;}
 .number12{top: 0%; left: 50%;}
+
+.controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls p, controls select{
+    margin-right: 10px;
+}
+
 
 @media (max-width: 480px) {
     .header-box {
